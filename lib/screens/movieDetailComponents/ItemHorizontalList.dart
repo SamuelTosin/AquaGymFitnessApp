@@ -76,7 +76,7 @@ class _ItemHorizontalListState extends State<ItemHorizontalList> {
               ).paddingSymmetric(horizontal: 4),
             ],
           ).onTap(() async {
-            youtubePlayerController!.pause();
+            // youtubePlayerController!.pause();
             if (RestrictionTypeRedirect ==
                 data.restrictionSetting!.restrictType) {
               await UrlLauncherScreen(data.restrictionSetting!.restrictUrl)
