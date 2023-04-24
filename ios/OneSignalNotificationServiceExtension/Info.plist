@@ -34,7 +34,7 @@
     		<key>NSSpeechRecognitionUsageDescription</key>
     		<string>Speech recognition allows for better search input recognition.</string>
     		<key>NSLocationWhenInUseUsageDescription</key>
-                <string>Location allows us to ensure account security and prevent multiple device access at the same time.</string>
+            <string>Location allows us to ensure account security and prevent multiple device access at the same time.</string>
     	</dict>
 </dict>
 </plist>
