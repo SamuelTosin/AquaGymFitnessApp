@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone allows you to make voice search</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Speech recognition allows for better search input recognition</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
@@ -38,9 +42,9 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Stremit app requires access to the Camera to upload your profile photo.</string>
+	<string>Aquagym Fitness app requires access to the Camera to upload your profile photo.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Stremit app requires access to the photo library to upload your profile photo.</string>
+	<string>Aquagym Fitness app requires access to the photo library to upload your profile photo.</string>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>
