@@ -27,5 +27,14 @@
 		<key>NSExtensionPrincipalClass</key>
 		<string>$(PRODUCT_MODULE_NAME).NotificationService</string>
 	</dict>
+	<key>Information Property List</key>
+    	<dict>
+    		<key>NSMicrophoneUsageDescription</key>
+    		<string>Microphone allows you to make voice search.</string>
+    		<key>NSSpeechRecognitionUsageDescription</key>
+    		<string>Speech recognition allows for better search input recognition.</string>
+    		<key>NSLocationWhenInUseUsageDescription</key>
+            <string>Location allows us to ensure account security and prevent multiple device access at the same time.</string>
+    	</dict>
 </dict>
 </plist>
