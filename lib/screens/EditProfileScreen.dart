@@ -1,6 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:fitnessapp/network/RestApis.dart';
+import 'package:fitnessapp/screens/Signin.dart';
+import 'package:fitnessapp/utils/Common.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:http/http.dart';
@@ -188,6 +191,45 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                     InAppWebViewScreen(Uri.parse(
                         'https://www.app.aquagym.fitness/account/'))
                         .launch(context);
+                  },
+                      highlightColor: Colors.transparent,
+                      splashColor: Colors.transparent),
+                ),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  margin: EdgeInsets.only(left: 16, right: 16),
+                  child: Card(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        const ListTile(
+                          leading: Icon(Icons.logout, color: Colors.white,),
+                          title: Text('Logout'),
+                        ),
+                      ],
+                    ),
+                  ).onTap(() {
+                    showConfirmDialogCustom(
+                      context,
+                      title: language!.doYouWantToLogout,
+                      primaryColor: colorPrimary,
+                      negativeText: language!.no,
+                      positiveText: language!.yes,
+                      onAccept: (context) async {
+                        String? path = await getCachedDirPath();
+                        Directory _file = Directory("$path/downloads/");
+                        if (_file.existsSync()) {
+                          _file.deleteSync(recursive: true);
+                          await removeKey(DOWNLOADED_DATA);
+                          appStore.downloadedItemList.clear();
+                        }
+                        setState(() {});
+                        finish(context);
+                        SignInScreen().launch(context, isNewTask: true);
+                        logout(context);
+                        finish(context);
+                      },
+                    );
                   },
                       highlightColor: Colors.transparent,
                       splashColor: Colors.transparent),
