@@ -66,6 +66,9 @@ class LanguageEn extends BaseLanguage {
   String get dontHaveAnAccount => 'Don\'t have an account ?';
 
   @override
+  String get iagree => 'By proceeding, you agree to the';
+
+  @override
   String get watchNow => 'Watch now';
 
   @override
@@ -314,6 +317,9 @@ class LanguageEn extends BaseLanguage {
 
   @override
   String get registerNow => 'Subscribe Now';
+
+  @override
+  String get termPolicy => 'Terms, Conditions & Privacy Policy';
 
   @override
   String get enterValidEmail => 'Enter valid email';

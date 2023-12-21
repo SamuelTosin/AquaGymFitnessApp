@@ -12,7 +12,6 @@ import 'package:fitnessapp/utils/Constants.dart';
 import 'package:http/http.dart' as http;
 import 'package:html/parser.dart' show parse;
 import 'package:html/dom.dart' as dom;
-import 'package:webview_flutter/webview_flutter.dart';
 
 import '../main.dart';
 
@@ -47,11 +46,11 @@ class VideoContentWidget extends StatelessWidget {
                   ? Container(
                       width: context.width(),
                       height: appStore.hasInFullScreen ? context.height() - context.statusBarHeight : context.height() * 0.3,
-                      child: WebView(
+                     /* child: WebView(
                         initialUrl: getVideoLink(embedContent.validate()),
                         javascriptMode: JavascriptMode.unrestricted,
                         backgroundColor: Colors.black,
-                      ),
+                      ),*/
                     )
                   : MovieFileWidget(snap.data.validate());
             }

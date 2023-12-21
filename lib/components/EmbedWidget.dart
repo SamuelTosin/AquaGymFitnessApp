@@ -5,7 +5,6 @@ import 'package:nb_utils/nb_utils.dart';
 import 'package:fitnessapp/main.dart';
 import 'package:fitnessapp/screens/movieDetailComponents/MovieFileWidget.dart';
 import 'package:fitnessapp/utils/Common.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class EmbedWidget extends StatefulWidget {
@@ -80,11 +79,11 @@ class _EmbedWidgetState extends State<EmbedWidget> {
                     height: appStore.hasInFullScreen ? context.height() - context.statusBarHeight : context.height() * 0.3,
                     child: Stack(
                       children: [
-                        WebView(
+                        /*WebView(
                           initialUrl: Uri.dataFromString(movieEmbedCode, mimeType: "text/html").toString(),
                           javascriptMode: JavascriptMode.unrestricted,
                           onWebViewCreated: (controller) {},
-                        ),
+                        ),*/
                         Positioned(
                           bottom: 0,
                           right: 0,

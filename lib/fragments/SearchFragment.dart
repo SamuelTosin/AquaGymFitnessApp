@@ -15,7 +15,6 @@ import 'package:fitnessapp/utils/resources/Size.dart';
 
 import '../components/loader_widget.dart';
 import '../screens/movieDetailComponents/MovieGridWidget.dart';
-import '../screens/movieDetailComponents/MovieRowWidget.dart';
 
 class SearchFragment extends StatefulWidget {
   static String tag = '/SearchFragment';
@@ -126,13 +125,13 @@ class SearchFragmentState extends State<SearchFragment> {
                           style: TextStyle(
                               fontSize: ts_normal,
                               color:
-                                  Theme.of(context).textTheme.headline6!.color),
+                                  Theme.of(context).textTheme.titleLarge!.color),
                           decoration: InputDecoration(
                             hintText: language!.searchMoviesTvShowsVideos,
                             hintStyle: TextStyle(
                                 color: Theme.of(context)
                                     .textTheme
-                                    .subtitle2!
+                                    .titleSmall!
                                     .color),
                             border: InputBorder.none,
                             filled: false,

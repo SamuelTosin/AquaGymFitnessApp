@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:fitnessapp/main.dart';
-import 'package:fitnessapp/screens/EditProfileScreen.dart';
 import 'package:fitnessapp/screens/HomeScreen.dart';
 import 'package:fitnessapp/utils/AppWidgets.dart';
 import 'package:fitnessapp/utils/Constants.dart';

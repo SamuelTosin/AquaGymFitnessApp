@@ -87,7 +87,7 @@ class OnBoardingScreenState extends State<OnBoardingScreen> {
             padding: EdgeInsets.only(top: 12, bottom: 12),
             child: Text(
               language!.getStarted,
-              style: primaryTextStyle(size: ts_normal.toInt(), color: context.textTheme.button!.color),
+              style: primaryTextStyle(size: ts_normal.toInt(), color: context.textTheme.labelLarge!.color),
             ),
             shapeBorder: RoundedRectangleBorder(
               borderRadius: new BorderRadius.circular(spacing_control),

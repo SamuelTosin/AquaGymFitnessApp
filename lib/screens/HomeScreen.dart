@@ -43,7 +43,7 @@ class HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> init() async {
-    OneSignal.shared.setNotificationOpenedHandler((notification) async {
+    /*OneSignal.shared.setNotificationOpenedHandler((notification) async {
       if (getBoolAsync(isLoggedIn)) {
         if (notification.notification.additionalData != null) {
           if (notification.notification.additionalData!.containsKey('id')) {
@@ -72,7 +72,7 @@ class HomeScreenState extends State<HomeScreen> {
           }
         }
       }
-    });
+    });*/
 
     if (getStringAsync(DOWNLOADED_DATA).isNotEmpty) {
       List<DownloadData> listData =

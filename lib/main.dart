@@ -44,12 +44,12 @@ void main() async {
   appStore.setLastName(getStringAsync(LAST_NAME));
   appStore.setLogging(getBoolAsync(isLoggedIn));
   appStore.setUserProfile(getStringAsync(USER_PROFILE));
-
-  if (isMobile) {
+  
+  /*if (isMobile) {
     await OneSignal.shared.setAppId(mOneSignalAPPKey);
     OneSignal.shared.consentGranted(true);
     OneSignal.shared.promptUserForPushNotificationPermission();
-  }
+  }*/
 
   runApp(MyApp());
 }

@@ -80,7 +80,7 @@ class GenreFragmentState extends State<GenreFragment> {
                   setState(() {});
                 },
                 unselectedLabelStyle: secondaryTextStyle(size: ts_small.toInt()),
-                unselectedLabelColor: Theme.of(context).textTheme.headline6!.color,
+                unselectedLabelColor: Theme.of(context).textTheme.titleLarge!.color,
                 labelColor: colorPrimary,
                 labelPadding: EdgeInsets.only(left: spacing_large, right: spacing_large),
                 tabs: [

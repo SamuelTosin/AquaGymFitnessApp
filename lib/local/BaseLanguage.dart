@@ -46,6 +46,8 @@ abstract class BaseLanguage {
 
   String get dontHaveAnAccount;
 
+  String get iagree;
+
   String get watchNow;
 
   String get signIn;
@@ -211,6 +213,8 @@ abstract class BaseLanguage {
   String get forgotPassword;
 
   String get registerNow;
+
+  String get termPolicy;
 
   String get enterValidEmail;
 

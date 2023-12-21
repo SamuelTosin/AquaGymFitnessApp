@@ -124,7 +124,7 @@ class MovieDetailLikeWatchListWidgetState
               },
             ).expand(),
             8.width,
-            AppButton(
+            /*AppButton(
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
@@ -144,7 +144,7 @@ class MovieDetailLikeWatchListWidgetState
               ),
               onTap: () => watchlistClick(),
               color: colorPrimaryDark,
-            ).expand(),
+            ).expand(),*/
           ],
         ),
       ],

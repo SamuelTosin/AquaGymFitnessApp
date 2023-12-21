@@ -17,7 +17,6 @@ import 'package:fitnessapp/utils/AppWidgets.dart';
 import 'package:fitnessapp/utils/Constants.dart';
 import 'package:fitnessapp/utils/resources/Colors.dart';
 import 'package:fitnessapp/utils/resources/Images.dart';
-import 'package:fitnessapp/utils/resources/Size.dart';
 
 import 'InAppWebviewScreen.dart';
 

@@ -5,7 +5,6 @@ import 'package:fitnessapp/main.dart';
 import 'package:fitnessapp/models/DashboardResponse.dart';
 import 'package:fitnessapp/network/RestApis.dart';
 import 'package:fitnessapp/screens/ViewAllMoviesScreen.dart';
-import 'package:fitnessapp/screens/movieDetailComponents/HomeSliderWidget.dart';
 import 'package:fitnessapp/screens/movieDetailComponents/ItemHorizontalList.dart';
 import 'package:fitnessapp/utils/AppWidgets.dart';
 import 'package:fitnessapp/utils/Constants.dart';

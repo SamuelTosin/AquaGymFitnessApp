@@ -95,7 +95,7 @@ Widget button(BuildContext context, buttonText,
     child: Text(buttonText,
         style: primaryTextStyle(
             size: ts_normal.toInt(),
-            color: Theme.of(context).textTheme.button!.color)),
+            color: Theme.of(context).textTheme.labelLarge!.color)),
     shapeBorder: RoundedRectangleBorder(
       borderRadius: new BorderRadius.circular(spacing_control),
       side: BorderSide(color: colorPrimary),
@@ -136,7 +136,7 @@ Widget iconButton(context, buttonText, icon, callBack,
           style: primaryTextStyle(
             size: ts_tiny.toInt(),
             color: buttonTextColor == null
-                ? Theme.of(context).textTheme.button!.color
+                ? Theme.of(context).textTheme.labelLarge!.color
                 : buttonTextColor,
           ),
           overflow: TextOverflow.ellipsis,
@@ -182,13 +182,13 @@ Widget subType(context, VoidCallback callback, icon,
             icon,
             width: 16,
             height: 20,
-            color: Theme.of(context).textTheme.headline6!.color,
+            color: Theme.of(context).textTheme.titleLarge!.color,
           )
         : SizedBox(),
     trailing: Icon(
       Icons.arrow_forward_ios,
       size: 16,
-      color: Theme.of(context).textTheme.caption!.color,
+      color: Theme.of(context).textTheme.bodySmall!.color,
     ).visible(showTrailIcon),
   );
 }

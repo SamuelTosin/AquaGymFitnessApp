@@ -140,7 +140,7 @@ class MoreFragmentState extends State<MoreFragment> {
                               subTitle: language!.watchVideosOffline,
                               titleTextStyle: primaryTextStyle(color: Colors.white),
                               leading: Image.asset(ic_download, color: Colors.white),
-                              trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.caption!.color),
+                              trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.bodySmall!.color),
                               onTap: () {
                                 DownloadItemScreen().launch(context);
                               },
@@ -158,7 +158,7 @@ class MoreFragmentState extends State<MoreFragment> {
                             subTitle: language!.changePasswordText,
                             titleTextStyle: primaryTextStyle(color: Colors.white),
                             leading: Image.asset(ic_password, color: Colors.white),
-                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.caption!.color),
+                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.bodySmall!.color),
                             onTap: () {
                               ChangePasswordScreen().launch(context);
                             },
@@ -168,7 +168,7 @@ class MoreFragmentState extends State<MoreFragment> {
                             title: language!.language,
                             titleTextStyle: primaryTextStyle(color: Colors.white),
                             subTitle: getSelectedLanguageModel()?.name.validate(),
-                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.caption!.color),
+                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.bodySmall!.color),
                             onTap: () {
                               LanguageScreen().launch(context);
                             },
@@ -183,7 +183,7 @@ class MoreFragmentState extends State<MoreFragment> {
                           SettingItemWidget(
                             title: language!.aboutUs,
                             titleTextStyle: primaryTextStyle(color: Colors.white),
-                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.caption!.color),
+                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.bodySmall!.color),
                             onTap: () {
                               launchCustomTabURL(url: aboutUsURL);
                             },
@@ -191,7 +191,7 @@ class MoreFragmentState extends State<MoreFragment> {
                           SettingItemWidget(
                             title: language!.termsConditions,
                             titleTextStyle: primaryTextStyle(color: Colors.white),
-                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.caption!.color),
+                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.bodySmall!.color),
                             onTap: () {
                               launchCustomTabURL(url: termsConditionURL);
                             },
@@ -199,7 +199,7 @@ class MoreFragmentState extends State<MoreFragment> {
                           SettingItemWidget(
                             title: language!.privacyPolicy,
                             titleTextStyle: primaryTextStyle(color: Colors.white),
-                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.caption!.color),
+                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.bodySmall!.color),
                             onTap: () {
                               launchCustomTabURL(url: privacyPolicyURL);
                             },
@@ -207,7 +207,7 @@ class MoreFragmentState extends State<MoreFragment> {
                           SettingItemWidget(
                             title: language!.logOut,
                             titleTextStyle: primaryTextStyle(color: Colors.white),
-                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.caption!.color),
+                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.bodySmall!.color),
                             onTap: () {
                               showConfirmDialogCustom(
                                 context,
@@ -232,7 +232,7 @@ class MoreFragmentState extends State<MoreFragment> {
                           SettingItemWidget(
                             title: language!.login,
                             titleTextStyle: primaryTextStyle(color: Colors.white),
-                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.caption!.color),
+                            trailing: Icon(Icons.arrow_forward_ios, size: 16, color: Theme.of(context).textTheme.bodySmall!.color),
                             onTap: () async {
                               await SignInScreen().launch(context);
                             },

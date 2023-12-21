@@ -258,7 +258,7 @@ class CastDetailScreenState extends State<CastDetailScreen> with TickerProviderS
                   labelStyle: TextStyle(fontSize: ts_normal),
                   indicatorColor: colorPrimary,
                   indicator: TabIndicator(),
-                  unselectedLabelColor: Theme.of(context).textTheme.headline6!.color,
+                  unselectedLabelColor: Theme.of(context).textTheme.titleLarge!.color,
                   labelColor: colorPrimary,
                   tabs: [
                     Tab(child: Text(language!.all)),

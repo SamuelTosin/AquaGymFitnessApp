@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:fitnessapp/screens/Signup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -8,7 +9,6 @@ import 'package:fitnessapp/components/loader_widget.dart';
 import 'package:fitnessapp/main.dart';
 import 'package:fitnessapp/network/RestApis.dart';
 import 'package:fitnessapp/screens/HomeScreen.dart';
-import 'package:fitnessapp/screens/InAppWebviewScreen.dart';
 import 'package:fitnessapp/utils/AppWidgets.dart';
 import 'package:fitnessapp/utils/Constants.dart';
 import 'package:fitnessapp/utils/resources/Colors.dart';
@@ -226,9 +226,10 @@ class SignInScreenState extends State<SignInScreen> {
                         16.height,
                         GestureDetector(
                           onTap: () async {
-                            InAppWebViewScreen(Uri.parse(
+                            /*InAppWebViewScreen(Uri.parse(
                                 'https://www.app.aquagym.fitness/register/'))
-                                .launch(context);
+                                .launch(context);*/
+                            SignUpScreen().launch(context, isNewTask: true);
                             /*if (getStringAsync(REGISTRATION_PAGE).isNotEmpty) {
                               // UrlLauncherScreen(getStringAsync(REGISTRATION_PAGE)).launch(context);
                               InAppWebViewScreen(Uri.parse(

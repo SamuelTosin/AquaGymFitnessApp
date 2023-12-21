@@ -4,7 +4,6 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:fitnessapp/screens/movieDetailComponents/MovieFileWidget.dart';
 import 'package:fitnessapp/utils/Common.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 import '../../main.dart';
@@ -90,13 +89,13 @@ class MovieURLWidgetState extends State<MovieURLWidget> {
                 height: appStore.hasInFullScreen ? context.height() - context.statusBarHeight : null,
                 child: Stack(
                   children: [
-                    WebView(
+                    /*WebView(
                       initialUrl: widget.url,
                       javascriptMode: JavascriptMode.unrestricted,
                       onWebResourceError: (e) {
                         log(e.toString());
                       },
-                    ),
+                    ),*/
                     Positioned(
                       bottom: 0,
                       right: 0,

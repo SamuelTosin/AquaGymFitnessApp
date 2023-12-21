@@ -3,7 +3,6 @@ import 'package:nb_utils/nb_utils.dart';
 import 'package:fitnessapp/main.dart';
 import 'package:fitnessapp/network/RestApis.dart';
 import 'package:fitnessapp/screens/HomeScreen.dart';
-import 'package:fitnessapp/screens/OnboardingScreen.dart';
 import 'package:fitnessapp/screens/Signin.dart';
 import 'package:fitnessapp/utils/AppWidgets.dart';
 import 'package:fitnessapp/utils/Common.dart';

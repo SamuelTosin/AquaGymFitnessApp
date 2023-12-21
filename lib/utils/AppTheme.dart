@@ -13,7 +13,6 @@ class AppTheme {
     splashColor: navigationBackground,
     primaryColor: colorPrimary,
     primaryColorDark: colorPrimaryDark,
-    errorColor: Color(0xFFE15858),
     hoverColor: colorPrimary.withOpacity(0.1),
     cardColor: colorPrimaryDark,
     disabledColor: Colors.white10,
@@ -26,19 +25,14 @@ class AppTheme {
         statusBarColor: appBackground,
       ),
     ),
-    colorScheme: ColorScheme.light(
-      primary: colorPrimary,
-      onPrimary: colorPrimary,
-      secondary: colorPrimary,
-    ),
     cardTheme: CardTheme(color: colorPrimaryDark),
     iconTheme: IconThemeData(color: textColorPrimary),
     textTheme: TextTheme(
-      button: TextStyle(color: Colors.white),
-      subtitle1: TextStyle(color: textColorPrimary),
-      subtitle2: TextStyle(color: textColorSecondary),
-      caption: TextStyle(color: textColorThird),
-      headline6: TextStyle(color: Colors.black),
+      labelLarge: TextStyle(color: Colors.white),
+      titleMedium: TextStyle(color: textColorPrimary),
+      titleSmall: TextStyle(color: textColorSecondary),
+      bodySmall: TextStyle(color: textColorThird),
+      titleLarge: TextStyle(color: Colors.black),
     ),
     dialogBackgroundColor: navigationBackground,
     bottomSheetTheme: BottomSheetThemeData(
@@ -46,6 +40,10 @@ class AppTheme {
     ),
     navigationBarTheme: NavigationBarThemeData(
       labelTextStyle: MaterialStateProperty.all(primaryTextStyle(size: 14)),
-    ),
+    ), colorScheme: ColorScheme.light(
+      primary: colorPrimary,
+      onPrimary: colorPrimary,
+      secondary: colorPrimary,
+    ).copyWith(error: Color(0xFFE15858)),
   );
 }

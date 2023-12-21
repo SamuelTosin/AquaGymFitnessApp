@@ -6,7 +6,6 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:fitnessapp/components/CommentWidget.dart';
 import 'package:fitnessapp/components/DownloadButtonWidget.dart';
 import 'package:fitnessapp/components/LoadingDotWidget.dart';
 import 'package:fitnessapp/components/SourcesDataWidget.dart';

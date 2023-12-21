@@ -6,14 +6,9 @@ import 'package:fitnessapp/main.dart';
 import 'package:fitnessapp/screens/EditProfileScreen.dart';
 import 'package:fitnessapp/screens/Signin.dart';
 import 'package:fitnessapp/utils/AppWidgets.dart';
-import 'package:fitnessapp/utils/Common.dart';
 import 'package:fitnessapp/utils/Constants.dart';
-import 'package:fitnessapp/utils/resources/Colors.dart';
 import 'package:fitnessapp/utils/resources/Images.dart';
-import 'package:fitnessapp/utils/resources/Size.dart';
 
-import '../models/MovieData.dart';
-import '../network/RestApis.dart';
 
 class HomeFragment extends StatefulWidget {
   static String tag = '/HomeFragment';
