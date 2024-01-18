@@ -163,7 +163,7 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                         children: <Widget>[
                           const ListTile(
                             leading: Icon(Icons.account_circle, color: Colors.white,),
-                            title: Text('Edit profile details'),
+                            title: Text('Edit profile details', style: const TextStyle(color: Colors.white),),
                           ),
                         ],
                       ),
@@ -182,7 +182,7 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                       children: <Widget>[
                         const ListTile(
                           leading: Icon(Icons.manage_accounts, color: Colors.white,),
-                          title: Text('Edit account details'),
+                          title: Text('Edit account details', style: const TextStyle(color: Colors.white),),
                         ),
                       ],
                     ),
@@ -203,7 +203,7 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                       children: <Widget>[
                         const ListTile(
                           leading: Icon(Icons.logout, color: Colors.white,),
-                          title: Text('Logout'),
+                          title: Text('Logout', style: const TextStyle(color: Colors.white),),
                         ),
                       ],
                     ),
@@ -254,7 +254,7 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                       children: <Widget>[
                         const ListTile(
                           leading: Icon(Icons.arrow_forward_ios, color: Colors.white,),
-                          title: Text('Contact us'),
+                          title: Text('Contact us', style: const TextStyle(color: Colors.white),),
                         ),
                       ],
                     ),
@@ -275,7 +275,7 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                       children: <Widget>[
                         const ListTile(
                           leading: Icon(Icons.arrow_forward_ios, color: Colors.white,),
-                          title: Text('Terms, Conditions & Privacy Policy'),
+                          title: Text('Terms, Conditions & Privacy Policy', style: const TextStyle(color: Colors.white),),
                         ),
                       ],
                     ),

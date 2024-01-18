@@ -229,7 +229,8 @@ class SignInScreenState extends State<SignInScreen> {
                             /*InAppWebViewScreen(Uri.parse(
                                 'https://www.app.aquagym.fitness/register/'))
                                 .launch(context);*/
-                            SignUpScreen().launch(context, isNewTask: true);
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpScreen()));
+                            /*SignUpScreen().launch(context, isNewTask: true);*/
                             /*if (getStringAsync(REGISTRATION_PAGE).isNotEmpty) {
                               // UrlLauncherScreen(getStringAsync(REGISTRATION_PAGE)).launch(context);
                               InAppWebViewScreen(Uri.parse(
